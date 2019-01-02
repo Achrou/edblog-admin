@@ -9,7 +9,8 @@ import Error404 from './pages/Error404'
 import Demo1 from './pages/Demo1'
 import Demo2 from './pages/Demo2'
 import HeaderAside from './layouts/HeaderAside'
-import post_new from './pages/posts/post_new'
+import post_list from './pages/posts/post_list'
+import post_edit from './pages/posts/post_edit'
 
 // 变量名 routerConfig 为 iceworks 检测关键字
 // ice 会自动在这个变量下添加路由数据
@@ -77,9 +78,17 @@ const routerConfig = [
     component: Demo2
   },
   {
-    path: '/post-new',
+    path: '/post-list',
     layout: HeaderAside,
-    component: post_new,
+    component: post_list,
+    meta: {
+      title: '所有文章'
+    }
+  },
+  {
+    path: '/post-edit',
+    layout: HeaderAside,
+    component: post_edit,
     meta: {
       title: '写文章'
     }

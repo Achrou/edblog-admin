@@ -24,11 +24,12 @@ const asideMenuConfig = [
     icon: 'wordpress',
     children: [
       {
-        name: '所有文章'
+        name: '所有文章',
+        path: '/post-list'
       },
       {
         name: '写文章',
-        path: '/post-new'
+        path: '/post-edit'
       }
     ]
   },

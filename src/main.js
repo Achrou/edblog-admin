@@ -16,9 +16,12 @@ import d2Admin from '@/plugin/d2admin'
 import router from './router'
 import { menuHeader, menuAside } from './menuConfig'
 import { frameInRoutes } from './routerConfig'
+import { GridLayout, GridItem } from 'vue-grid-layout'
 
 // 核心插件
 Vue.use(d2Admin)
+Vue.component('d2-grid-layout', GridLayout)
+Vue.component('d2-grid-item', GridItem)
 
 new Vue({
   router,

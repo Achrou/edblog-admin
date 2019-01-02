@@ -1,3 +1,3 @@
-import post from './post'
+import postList from './post_list'
 
-export default post
+export default postList
